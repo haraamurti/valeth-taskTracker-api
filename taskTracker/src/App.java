@@ -15,7 +15,8 @@ public class App {
             String input = in.next();
 
         if (input.equals("add")){
-            String desc = in.nextLine();
+            in.nextLine();
+            String desc = in.nextLine().trim();
             Task task = new Task(desc);
             listTasks.add(task);
             System.out.println("success adding task with id : "+task.getId()+"\n description : "+desc);
@@ -62,7 +63,7 @@ public class App {
                 if(idTujuan == listTasks.get(i).getId()){
                     int id_target=listTasks.get(i).getId();
                     listTasks.get(i).setStatus(status2);
-                    System.out.println("Task "+idTujuan+" marked as 'in-progress'");
+                    System.out.println("Task "+id_target+" marked as 'in-progress'");
                     flag=true;
                     break;
                 }

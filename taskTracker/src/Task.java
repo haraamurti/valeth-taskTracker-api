@@ -1,4 +1,5 @@
 import java.time.LocalDateTime;
+import java.util.Arrays;
 
 public class Task {
 
@@ -73,4 +74,23 @@ public class Task {
         System.out.println();
     }
 
+
+    // @Override
+	// public String toString(){
+	// 	StringBuilder sb = new StringBuilder();
+	// 	sb.append("***** Employee Details *****\n");
+	// 	sb.append("ID="+getId()+"\n");
+	// 	sb.append("Name="+getName()+"\n");
+	// 	sb.append("Permanent="+isPermanent()+"\n");
+	// 	sb.append("Role="+getRole()+"\n");
+	// 	sb.append("Phone Numbers="+Arrays.toString(getPhoneNumbers())+"\n");
+	// 	sb.append("Address="+getAddress());
+	// 	sb.append("\n*****************************");
+		
+	// 	return sb.toString();
+	// }
+
+
+
+    //still figuring out how and what does the program wants me to do , so it just wanted me to make a responsee in a JSON file so the hard part is I ned to parse it while also read it without using any external libary
 }
